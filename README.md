@@ -1,2 +1,2 @@
 # CogScaAppTests
-Test Suite for the immerightnow/CognitiveScale repository
+Test Suite for the Mozilla repository (read-only testing)
