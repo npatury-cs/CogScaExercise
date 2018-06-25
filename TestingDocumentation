@@ -1,0 +1,14 @@
+Strategy:
+Since I am setting up a test suite for an implementation of https://developer.github.com/v3/, I chose to test against the Mozilla organization in GitHub.
+Since this is actually GitHub (and not a test environment), I chose to only implement tests with a Get operation.  This also helped to constrain the test coverage to the available schedule.
+I chose to use SoapUI to implement the testing.  This gave me a solid foundation for REST tests and a structure to work within.  This would also allow for scalability and the ability to extend the capabilities with Groovy scripts.
+
+Structure:
+The tests include coverage for retrieving Repositories and Issues from GitHub for the Mozilla Foundation.  The tests include assertions to ensure that specific items were retrieved.  The order of the tests was chosen because there is some dependency from the previous functionality to the next test (Repositories in general, specific repository, issues within that repository, and a specific issues).
+There is also a very basic test that retrieves the available emojis.  Running this test would ensure that the system is up and a connection is available.
+
+Continuous Improvement:
+Validation are hard-coded and assume static data in the environment.
+
+Next Steps:
+Once a test environment is available, coverage should be included for user creation, login, security, and creation/modification of artifacts.
